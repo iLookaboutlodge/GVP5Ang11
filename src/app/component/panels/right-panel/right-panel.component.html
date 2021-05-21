@@ -1,0 +1,6 @@
+<div class="right-panel-detail vp-panel" *ngFor="let viewport of viewportList" [ngStyle]="getViewportSize(viewport)">
+    <app-viewport [viewport]="viewport" (actionOnVP)="actionVPHandler($event)"></app-viewport>
+</div>
+<div class="horizental-div" *ngIf="showHorizontal"></div>
+<div class="vertical-div1" *ngIf="showVertical1"></div>
+<div class="vertical-div2" *ngIf="showVertical2"></div>

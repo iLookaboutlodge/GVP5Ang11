@@ -1,0 +1,53 @@
+.right-panel-detail{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: 1px #eeeeee solid;
+}
+
+.horizental-div{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width: 4px;
+    height: 0;
+   // border: 1px lightgray  dotted;
+    margin:0;
+    padding:0;     
+    background-color: #eeeeee;   
+    cursor:vertical-text;
+    display: none;
+}
+
+.vertical-div1{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width: 4px;
+    height: 0;
+   // border: 1px lightgray  dotted;
+    margin:0;
+    padding:0;     
+    background-color: #eeeeee;   
+    cursor:vertical-text;
+    display: none;
+}
+
+
+.vertical-div2{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:30%;
+    width: 4px;
+    height: 0;
+   // border: 1px lightgray  dotted;
+    margin:0;
+    padding:0;     
+    background-color: #eeeeee;   
+    cursor:vertical-text;
+}

@@ -1,0 +1,26 @@
+<div class="vp-panel-title" [hidden]="!(isMainWidow())">
+    <div class="pull-left vp-panel-name">
+        <span >{{viewport.title}}</span>
+    </div>
+    <a href="" class="pull-right btn vp-icon-close" (click)="close(viewport, $event)">
+        <i class="fa fa-lg fa-close"></i>
+    </a>
+    <a href="" class="pull-right btn vp-icon-colpand vp-colpand-expand" (click)="expandView(viewport, $event)" *ngIf="viewport.status=='collapsed' || viewport.status=='normal'">
+        <i class="fa fa-lg fa-expand"></i>
+    </a>
+    <a href="" class="pull-right btn vp-icon-colpand vp-colpand-collapse" (click)="collapseView(viewport, $event)" *ngIf="viewport.status=='expanded'">
+        <i class="fa fa-lg fa-compress"></i>
+    </a>
+    <!--  || d.code=='VPLIST' : Result VP undockable.  -->
+    <a href="" class="pull-right btn" (click)="undockablewindow(viewport, $event)" *ngIf="showUndockableIcon() && getInViewCodeList(viewport.code)">
+        <i class="fa fa-lg fa-columns"></i>
+    </a>
+</div>
+<div class="vp-panel-toolbar" [hidden]="!(needToolBar(viewport.code))">
+    <!-- <toolbar data="d.tools"></toolbar> -->
+</div>
+<div class="vp-panel-content" [attr.data-vpcode]="viewport.code">
+    <div class="vp-panel-container" [attr.data-viewid]="viewport.viewId">
+        <!-- <ng-include src="d.url"></ng-include> -->
+    </div>
+</div>

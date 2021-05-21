@@ -1,0 +1,499 @@
+.realstorcontent {
+    border: 1px solid #ddd;
+    border-top-width: 0;
+    overflow-y: hidden;
+    padding: 5px 5px 0 5px;
+    height: calc(100% - 50px);
+}
+.realstorcontent2 {
+    border: 1px solid #ddd;
+    border-top-width: 0;
+    overflow-y: hidden;
+    padding: 5px 5px 0 5px;
+    height: calc(100% - 50px);
+}
+
+.rsTopBar {
+    height: 20px;
+    /*background-color: #eee;
+    border: 1px solid #aaa;
+    margin-bottom: 5px;*/
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.rsItemList {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.rsItemShell {
+    float: left;
+    width: 33.33333333%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+    .rsItemShell .rsItem {
+        float: left;
+        border: 1px solid #aaa;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        background-color: #fafafa;
+    }
+
+    .rsItemShell .rsItemTitle {
+        padding: 2px 25px 2px 10px;
+        background-color: #f3f3f4;
+        font-size: 15px;
+        font-weight: bold;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        .rsItemShell .rsItemTitle .rsTitle {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .rsItemShell .rsItemTitle .fa-lg {
+            float: right;
+            cursor: pointer;
+            margin-right: -20px;
+            margin-top: -18px;
+            color: #03589C;
+        }
+
+.rsItemDetail {
+    float: left;
+    width: 70%;
+    height: calc(100% - 10px);
+}
+
+    .rsItemDetail.expand {
+    }
+
+        .rsItemDetail.expand .rsItemShell {
+            width: 100%;
+            height: 100%;
+        }
+
+            .rsItemDetail.expand .rsItemShell .rsItem {
+                height: 100%;
+            }
+
+.rsItemSmall {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 10px);
+    width: 30%;
+}
+
+    .rsItemSmall.expand {
+        clear: left;
+        float: left;
+    }
+
+    .rsItemSmall .rsItemShell {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .rsItemSmall .rsItem {
+        height: 50px;
+    }
+
+    .rsItemSmall .rsItemTitle {
+        font-size: 14px;
+    }
+
+.rsItemBrief {
+    display: block;
+}
+
+    .rsItemBrief img {
+        float: left;
+        width: 30%;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .rsItemBrief .rsItemRight {
+        width: 60%;
+        float: right;
+        padding-top: 20px;
+    }
+
+    .rsItemBrief .rsItemPrice {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .rsItemBrief button {
+        margin-top: 10px;
+    }
+
+    .rsItemBrief a {
+        cursor: pointer;
+    }
+
+.rsItemDetail .rsItemBrief {
+    display: none;
+}
+
+.rsItemDescr {
+    float: left;
+    width: 100%;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+}
+
+    .rsItemDescr .rsLeft {
+        width: 40%;
+        float: left;
+        padding: 20px 10px 0 10px;
+    }
+
+    .rsItemDescr .rsRight {
+        width: 60%;
+        float: right;
+        padding: 20px 10px 0 10px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .rsItemDescr a {
+        cursor: pointer;
+        float: right;
+    }
+
+    .rsItemDescr img {
+        float: left;
+        width: 100%;
+        max-height: 70%;
+    }
+
+    .rsItemDescr strong {
+        font-size: 16px;
+    }
+
+.rsCartTitle {
+    height: 26px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 2px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rsCartList {
+    overflow-y: auto;
+}
+
+.rsCartEntry {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+    .rsCartEntry:nth-child(odd) {
+        background-color: #F0EFFF;
+    }
+
+    .rsCartEntry:nth-child(even) {
+        background-color: #D1DEFF;
+    }
+
+    .rsCartEntry .rsCartInfo {
+        float: left;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+        .rsCartEntry .rsCartInfo div {
+            padding: 5px 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+    .rsCartEntry .fa-2x {
+        float: right;
+        margin-left: -30px;
+        height: 28px;
+        width: 28px;
+        margin-top: 1px;
+        margin-right: 2px;
+        cursor: pointer;
+        color: #333;
+    }
+
+        .rsCartEntry .fa-2x:hover {
+            color: #03589C;
+        }
+
+.rsCheckOut {
+    margin: 5px 0;
+    float: right;
+    width: 180px;
+}
+
+.rsHistInput {
+    float: right;
+    margin-right: 5px;
+    width: 45%;
+    font-weight: normal;
+}
+
+.rsHistSearch, .rsHistClear {
+    float: right;
+    padding: 2px 16px;
+}
+
+#rsHistList{
+    height: calc(100% - 45px);
+}
+
+#rsHistList td {
+    white-space: normal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.rsClosePay {
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 40px);
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+    z-index: 1000;
+    color: Red;
+}
+
+.vp-right-realstor .nav > li > a {
+    padding: 5px 10px;
+}
+
+.vp-right-realstor .vp-right-realstor-content {
+    z-index: 1;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.vp-right-planstore .nav > li > a {
+    padding: 5px 10px;
+}
+
+.vp-right-planstore .vp-right-realstor-content2 {
+    z-index: 1;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.k-grid-header .k-header {
+    color: white;
+}
+
+.printsel, .realstorsel {
+    height: 180px;
+}
+
+    .printsel input {
+        float: left;
+        clear: left;
+        margin: 5px 10px;
+    }
+
+    .printsel label {
+        float: left;
+    }
+
+    .realstorsel input {
+        float: left;
+        clear: left;
+        margin: 2px 10px 1px 10px;
+    }
+
+    .realstorsel label {
+        float: left;
+        font-weight: normal;
+    }
+
+
+.rs-item {
+    float: left;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+    background-color: #fafafa;
+}
+
+.rs-item-head{
+    padding: 2px 25px 2px 10px;
+    background-color: #f3f3f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.rs-title {
+    font-size: 13px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.rs-item-head .fa-lg {
+    float: right;
+    cursor: pointer;
+    margin-right: -20px;
+    margin-top: -16px;
+    color: #03589C;
+}
+
+.expand .rsItemShell .rs-item {
+    height: 100%;
+}
+.collapse .rs-item {
+    float: left;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.rs-item-minimized .rs-item{
+    height: 50px;
+}
+
+
+.rs-item-body{
+    display: block;
+}
+
+
+.rs-item-body img {
+    float: left;
+    width: 35%;
+    height: 150px;
+    margin: 10px;
+}
+
+.rs-item-body .rsItemRight {
+    width: 60%;
+    float: right;
+    padding-top: 20px;
+}
+
+.rs-item-body .rsItemPrice {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.rs-item-body button {
+    margin-top: 10px;
+}
+
+.rs-item-body a {
+    cursor: pointer;
+}
+
+.rs-item-body button{
+    margin-top:10px;
+}
+
+.rs-item-body .rsItemCredit {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    height:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.rs-item-minimized .rs-item-body{
+    height:0px;
+}
+
+.expand .rs-item-body{
+    float: left;
+    width: 100%;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+}
+
+.expand .rs-item-body .rsLeft {
+        width: 40%;
+        float: left;
+        padding: 20px 10px 0 10px;
+    }
+
+.expand .rs-item-body .rsRight {
+        width: 60%;
+        float: right;
+        padding: 20px 10px 0 10px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+.expand .rs-item-body a {
+        cursor: pointer;
+        float: right;
+    }
+
+.expand .rs-item-body img {
+        float: left;
+        width: 100%;
+        height: 100%;
+        border:1px solid lightgray;
+}
+
+.expand .rs-item-body strong {
+        font-size: 16px;
+}
+
+#bundle-profile-modal .error-label{
+    width:100%; 
+    font-size:12px;
+    max-height:14px;
+    padding-bottom:0px;
+}
+
+#bundle-profile-modal .modal-dialog{
+    width:428px;
+}
+
+#bundle-profile-modal input{
+            width:100%;
+            display: block;
+            height: 30px;
+            padding: 3px 3px;
+            font-size: 12px;
+            line-height: 1.42;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+

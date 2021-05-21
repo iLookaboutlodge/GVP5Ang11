@@ -1,1 +1,2385 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-size: 12px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+option,
+textarea {
+    font-size: 12px;
+}
+input,select,textarea,option{
+       border-color: #ccc;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.vp-left {
+   // float: left;
+}
+
+.vp-right {
+    visibility: visible;
+}
+
+.vp-right, .vp-right-realstor, .vp-right-boundary, .vp-right-planstore {
+   // float: left;
+    //border: ridge #ccc;
+    position: relative;
+}
+
+.vp-splitter {
+    height: 100%;
+    border-right: 2px solid #888;
+    width: 25px;
+    border-left: 1px solid #aaa;
+}
+
+.vp-panel {
+  //  float: left;
+  //  position: absolute;
+  //  border: 1px solid #ccc;
+    /*border-radius: 2px;*/
+}
+
+.vp-panel-title {
+    border-bottom: 1px solid #eeeeee;
+    /*background-color: #111DAA;*/
+    background-color:#03589c;
+    height: 25px;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    padding: 0 5px;
+}
+
+    .vp-panel-title a {
+        padding: 1px 4px;
+        color: white;
+    }
+
+    .vp-panel-title a:hover {
+        background-color: #111DD9;
+    }
+
+    .vp-panel-title .btn:hover {
+        color: white;
+    }
+
+.vp-panel-name {
+    color: #eee;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size:12px;
+    padding-top:3px;
+    span{
+        margin-top:auto;
+        margin-bottom: auto;
+    }
+}
+
+.vp-panel-toolbar {
+    height: 26px;
+    background-color: #fafafa;
+    padding: 0 5px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.vp-panel-content {
+    height: calc(100% - 50px);
+}
+
+.vp-icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+}
+
+.btn:hover {
+    background-color: #ADDAFF;
+}
+
+/*--------- for animations ---------*/
+/*---------------one panel--------------*/
+.vp-pnl0-1 {
+    -moz-animation: pnl01 .5s;
+    -webkit-animation: pnl01 .5s;
+    animation: pnl01 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl01 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl01 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes pnl01 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*---------------two panels--------------*/
+.vp-pnl0-2 {
+    -moz-animation: pnl02 .5s;
+    -webkit-animation: pnl02 .5s;
+    animation: pnl02 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl02 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl02 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@keyframes pnl02 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.vp-pnl1-2 {
+    -moz-animation: pnl12 .5s;
+    -webkit-animation: pnl12 .5s;
+    animation: pnl12 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl12 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(50%);
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl12 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(50%);
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@keyframes pnl12 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(50%);
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.vp-mn2-1 {
+    -moz-animation: mn21 .5s;
+    -webkit-animation: mn21 .5s;
+    animation: mn21 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn21 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes mn21 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@keyframes mn21 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 100%;
+    }
+}
+
+/*---------------three panels--------------*/
+.vp-pnl0-3 {
+    -moz-animation: pnl03 .5s;
+    -webkit-animation: pnl03 .5s;
+    animation: pnl03 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl03 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl03 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@keyframes pnl03 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+.vp-pnl1-3 {
+    -moz-animation: pnl13 .5s;
+    -webkit-animation: pnl13 .5s;
+    animation: pnl13 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl13 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl13 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@keyframes pnl13 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+.vp-pnl2-3 {
+    -moz-animation: pnl23 .5s;
+    -webkit-animation: pnl23 .5s;
+    animation: pnl23 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl23 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes pnl23 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+@keyframes pnl23 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 100%;
+    }
+}
+
+.vp-mn3-1 {
+    -moz-animation: mn31 .5s;
+    -webkit-animation: mn31 .5s;
+    animation: mn31 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn31 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes mn31 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@keyframes mn31 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+.vp-mn3-2 {
+    -moz-animation: mn32 .5s;
+    -webkit-animation: mn32 .5s;
+    animation: mn32 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn32 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes mn32 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+@keyframes mn32 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(70%);
+        width: 30%;
+        height: 50%;
+    }
+}
+
+/*---------------four panels--------------*/
+.vp-pnl0-4 {
+    -moz-animation: pnl04 .5s;
+    -webkit-animation: pnl04 .5s;
+    animation: pnl04 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl04 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl04 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@keyframes pnl04 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.vp-pnl1-4 {
+    -moz-animation: pnl14 .5s;
+    -webkit-animation: pnl14 .5s;
+    animation: pnl14 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl14 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl14 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@keyframes pnl14 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.vp-pnl2-4 {
+    -moz-animation: pnl24 .5s;
+    -webkit-animation: pnl24 .5s;
+    animation: pnl24 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl24 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl24 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@keyframes pnl24 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: 0;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.vp-pnl3-4 {
+    -moz-animation: pnl34 .5s;
+    -webkit-animation: pnl34 .5s;
+    animation: pnl34 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl34 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl34 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@keyframes pnl34 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 2);
+        left: calc(100% / 2);
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.vp-mn4-1 {
+    -moz-animation: mn41 .5s;
+    -webkit-animation: mn41 .5s;
+    animation: mn41 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn41 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@-webkit-keyframes mn41 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@keyframes mn41 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+.vp-mn4-2 {
+    -moz-animation: mn42 .5s;
+    -webkit-animation: mn42 .5s;
+    animation: mn42 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn42 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@-webkit-keyframes mn42 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@keyframes mn42 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+.vp-mn4-3 {
+    -moz-animation: mn43 .5s;
+    -webkit-animation: mn43 .5s;
+    animation: mn43 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn43 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@-webkit-keyframes mn43 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+@keyframes mn43 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 3);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 3);
+    }
+}
+
+/*---------------five and six panels--------------*/
+.vp-pnl0-5, .vp-pnl0-6 {
+    -moz-animation: pnl06 .5s;
+    -webkit-animation: pnl06 .5s;
+    animation: pnl06 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl06 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl06 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl06 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-pnl1-5, .vp-pnl1-6 {
+    -moz-animation: pnl16 .5s;
+    -webkit-animation: pnl16 .5s;
+    animation: pnl16 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl16 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl16 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl16 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-pnl2-5, .vp-pnl2-6 {
+    -moz-animation: pnl26 .5s;
+    -webkit-animation: pnl26 .5s;
+    animation: pnl26 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl26 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl26 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl26 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-pnl3-5, .vp-pnl3-6 {
+    -moz-animation: pnl36 .5s;
+    -webkit-animation: pnl36 .5s;
+    animation: pnl36 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl36 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl36 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl36 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: 0;
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-pnl4-5, .vp-pnl4-6 {
+    -moz-animation: pnl46 .5s;
+    -webkit-animation: pnl46 .5s;
+    animation: pnl46 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl46 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl46 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl46 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-pnl5-6 {
+    -moz-animation: pnl56 .5s;
+    -webkit-animation: pnl56 .5s;
+    animation: pnl56 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes pnl56 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@-webkit-keyframes pnl56 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+@keyframes pnl56 {
+    from {
+    }
+
+    to {
+        top: calc(50%);
+        left: calc(100% * 2 / 3);
+        width: calc(100% / 3);
+        height: 50%;
+    }
+}
+
+.vp-mn5-1 {
+    -moz-animation: mn51 .5s;
+    -webkit-animation: mn51 .5s;
+    animation: mn51 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn51 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@-webkit-keyframes mn51 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@keyframes mn51 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+.vp-mn5-2 {
+    -moz-animation: mn52 .5s;
+    -webkit-animation: mn52 .5s;
+    animation: mn52 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn52 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@-webkit-keyframes mn52 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@keyframes mn52 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+.vp-mn5-3 {
+    -moz-animation: mn53 .5s;
+    -webkit-animation: mn53 .5s;
+    animation: mn53 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn53 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@-webkit-keyframes mn53 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@keyframes mn53 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+.vp-mn5-4 {
+    -moz-animation: mn54 .5s;
+    -webkit-animation: mn54 .5s;
+    animation: mn54 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn54 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@-webkit-keyframes mn54 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+@keyframes mn54 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 4);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 4);
+    }
+}
+
+.vp-mn6-1 {
+    -moz-animation: mn61 .5s;
+    -webkit-animation: mn61 .5s;
+    animation: mn61 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn61 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@-webkit-keyframes mn61 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@keyframes mn61 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+.vp-mn6-2 {
+    -moz-animation: mn62 .5s;
+    -webkit-animation: mn62 .5s;
+    animation: mn62 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn62 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@-webkit-keyframes mn62 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@keyframes mn62 {
+    from {
+    }
+
+    to {
+        top: calc(100% / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+.vp-mn6-3 {
+    -moz-animation: mn63 .5s;
+    -webkit-animation: mn63 .5s;
+    animation: mn63 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn63 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@-webkit-keyframes mn63 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@keyframes mn63 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 2 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+.vp-mn6-4 {
+    -moz-animation: mn64 .5s;
+    -webkit-animation: mn64 .5s;
+    animation: mn64 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn64 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@-webkit-keyframes mn64 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@keyframes mn64 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 3 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+.vp-mn6-5 {
+    -moz-animation: mn65 .5s;
+    -webkit-animation: mn65 .5s;
+    animation: mn65 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes mn65 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 4 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@-webkit-keyframes mn65 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 4 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+@keyframes mn65 {
+    from {
+    }
+
+    to {
+        top: calc(100% * 4 / 5);
+        left: calc(70%);
+        width: 30%;
+        height: calc(100% / 5);
+    }
+}
+
+/*------------------main panel-------------------*/
+.vp-outstanding {
+    -moz-animation: mn0 .5s;
+    -webkit-animation: mn0 .5s;
+    animation: mn0 .5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+    .vp-outstanding .vp-colpand-expand, .vp-focus .vp-colpand-expand {
+        display: none;
+    }
+
+    .vp-outstanding .vp-colpand-collapse, .vp-focus .vp-colpand-collapse {
+        display: inline-block !important;
+    }
+
+@-moz-keyframes mn0 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes mn0 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@keyframes mn0 {
+    from {
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+.vp-panel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll-col {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 0;
+}
+
+.pdtable {
+    width: 100%;
+    text-align: left;
+}
+
+    .pdtable td {
+        padding: 3px 5px;
+    }
+
+        .pdtable td:nth-child(odd) {
+            width: 40%;
+        }
+
+        .pdtable td:nth-child(even) {
+            width: 60%;
+        }
+
+    .pdtable .field {
+        text-align: right;
+        vertical-align: top;
+    }
+
+.vp-panel-detail .panel-heading {
+    padding: 0;
+}
+
+.vp-panel-detail .nav > li > a {
+    padding: 5px 10px;
+}
+
+.mapLayerOpt {
+    padding-left: 10px;
+    float: left;
+    clear: left;
+    width: 98%;
+}
+
+.parcelayer, .aerialayer {
+    float: left;
+    margin-left: 10px;
+    width: 120px;
+    padding: 0 10px;
+    line-height: 22px;
+    height: 22px;
+    font-size: 12px;
+}
+
+.map-right-corner{
+    position: absolute;
+    background-color:transparent;
+    top:0;
+    right:0;
+    display:normal; 
+    height:auto;
+}
+
+.text-active,
+.active > .text {
+    display: none !important;
+}
+
+.active > .text-active {
+    display: inline-block !important;
+}
+
+.k-grid td {
+    padding: .1em .6em;
+}
+
+div[class*='vp-mn'] .k-pager-numbers {
+    display: none;
+}
+
+.vp-hist-label {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    text-align: right;
+    width: 100px;
+}
+
+.vp-hist-text {
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.vp-hist-image {
+    width: 120px;
+    height: 90px;
+}
+
+
+.k-pager-wrap > .k-link {
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+.k-pager-wrap {
+    line-height: 1.5em;
+    padding: 0.2em 0.1em 0.1em 0.25em;
+}
+
+.k-pager-numbers .k-link {
+    line-height: 1.5em;
+    color: black !important;
+}
+
+.k-pager-numbers .k-link, .k-pager-numbers .k-state-selected{
+    height:1.5em !important;
+}
+
+.vp-left-container {
+    width: calc(100% - 25px);
+    height: 100%;
+    overflow: hidden;
+}
+
+.vp-blur-text {
+    color: #428bca;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaf;
+}
+.vp-blur-text2 {
+    color: #428bca;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaf;
+}
+.vp-blur-text:hover {
+    color: #226baa;
+    text-decoration: underline;
+}
+
+.vp-left-menu {
+    clear: left;
+    width: 100%;
+}
+
+.accordion-toggle .node-collapse {
+    display: none;
+}
+
+.accordion-toggle .node-expand {
+    display: block;
+}
+
+.accordion-toggle.collapsed .node-collapse {
+    display: block;
+}
+
+.accordion-toggle.collapsed .node-expand {
+    display: none;
+}
+
+.vp-search-panel {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    height:100%;
+}
+
+.vp-search-panel .col-sm-4, .vp-search-panel .col-sm-8, .vp-search-panel .col-sm-12 {
+    padding: 0 5px;
+}
+
+.vp-search-panel .row {
+    padding: 0 10px;
+}
+
+.vp-search-panel .panel-heading {
+    padding: 0 5px;
+}
+
+.vp-search-panel .nav > li > a {
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.vp-search-panel .panel-body {
+    padding: 0 2px;
+}
+
+.vp-search-panel .form-control {
+    padding: 2px 5px;
+    height: 24px;
+    font-size: 12px;
+}
+
+.vp-search-panel label {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.vp-search-sel {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.btn-1-blue, .btn-1-blue:hover, .btn-1-blue:focus {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #03589C 0px, #034880 100%);
+    background-repeat: repeat-x;
+    border-color: #2790E3;
+}
+
+.vp-search-panel .btn-1-blue, .vp-search-panel .btn-1-blue:hover, .vp-search-panel .btn-1-blue:focus {
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.searchingmsg {
+    margin-right: 10px;
+    margin-top: 4px;
+    font-style: italic;
+    color: red;
+    font-size: 10px;
+}
+
+.tooltip-inner {
+    max-width: 300px;
+    color: #333;
+    font-weight: bold;
+    background-color: #FFFFA3;
+    border: 1px solid #F1D031;
+}
+
+.tooltip.in {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+#profileModal .table > tbody > tr > td {
+    padding: 4px 8px;
+}
+
+#profileModal table input {
+    width: 100%;
+}
+
+.vp-matchlist-container {
+    position: absolute;
+    left: 360px; /* 275px;*/
+    top: 0;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fefefe;
+    z-index: 10000;
+    padding: 0 5px;
+    display: none;
+}
+
+    .vp-matchlist-container .vp-ml-title {
+        float: left;
+        width: 100%;
+    }
+
+    .vp-matchlist-container .vp-ml-list {
+        float: left;
+        border: 1px solid #888;
+        width: 100%;
+        height: calc(100% - 40px);
+        overflow-y: auto;
+        background-color: aliceblue;
+    }
+
+    .vp-matchlist-container .vp-ml-item {
+        float: left;
+        border-bottom: 1px solid #888;
+        width: 100%;
+        height: auto;
+        padding: 2px 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .vp-matchlist-container .vp-ml-item:hover {
+        background-color: #C9E0FF;
+    }
+
+    .vp-matchlist-container .vp-ml-item a {
+        text-decoration: none;
+        color: #444;
+        font-size: 12px;
+    }
+
+/*histlist*/
+
+
+/*
+.single-search .k-input {
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+}
+
+.single-search .k-select {
+    min-height: 24px;
+    line-height: 24px;
+}
+.search-select .k-dropdown-wrap {
+    border-width: 0;
+}
+
+*/
+
+.screenlocker-message {
+    position: absolute;
+    z-index: 15001;
+    color: white;
+    left: calc(50% - 250px);
+    top: 150px;
+    font-size: 20px;
+    opacity: 0;
+    -moz-animation: messageshowing .5s;
+    -webkit-animation: messageshowing .5s;
+    animation: messageshowing .5s;
+    -moz-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.screenlocker-message3 {
+    position: absolute;
+    z-index: 15001;
+    color: red;
+    background-color: white;
+    left: calc(50% - 250px);
+    top: 250px;
+    font-size: 20px;
+    opacity: 1;
+}
+
+
+@-moz-keyframes messageshowing {
+    from {
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes messageshowing {
+    from {
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes messageshowing {
+    from {
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.screenlocker-message a {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+    .screenlocker-message a:hover {
+        color: #ABD8FF;
+    }
+
+.floatBar {
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+    .floatBar select {
+        width: 50%;
+        float: right;
+        margin: 5px;
+        font-weight: bold;
+        background-color: rgba(0,0,0,.4);
+        color: white;
+    }
+
+.lefticon, .panelicon {
+    padding: 0;
+}
+
+    .panelicon.pushdown {
+        background-color: rgba(0,0,0,.2);
+        border: 1px solid;
+    }
+
+.photodiv {
+    /*width: 100%;
+    height: 100%;*/
+    position: relative;
+    /*top: 0;
+    left: 0;*/
+}
+
+.photodiv img {
+    /*width: 100%;
+    height: auto;*/
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    float: left;*/
+    cursor: move;
+}
+
+.photothumb {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    max-height: 160px;
+    min-height: 80px;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-x: auto;
+    padding: 10px 20px;
+}
+
+    .photothumb img {
+        position: relative;
+        float: left;
+        margin-right: 5px;
+        width: 20%;
+        height: auto;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+
+.photothumbutton {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    left: calc(100% - 50px);
+    background-color: rgba(0,0,0,.7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .photothumbutton.minimized {
+        top: calc(100% - 34px);
+    }
+
+
+.bdr-toolbox {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: auto;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .6);
+    padding-left: 5px;
+}
+
+    .bdr-toolbox a {
+        color: white;
+    }
+
+        .bdr-toolbox a.switch.down {
+            background-color: #eee;
+            color: blue;
+        }
+
+.scape-edit {
+    width: 100%;
+    height: calc(100% - 250px);
+    background-color: black;
+}
+
+.scape-panel {
+    width: 100%;
+    height: 220px;
+    background-color: #eee;
+}
+
+.scape-block {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.scape-level, .scape-yaw, .scape-pitch, .scape-zoom {
+    width: 100%;
+    float: left;
+}
+
+.scape-row {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.k-slider .k-label {
+    font-size: 9px;
+}
+
+.k-grid-header .k-header .k-icon {
+    background-image: url('/Images/sprite.png');
+}
+
+.scape-column {
+    float: left;
+    padding: 5px;
+}
+
+    .scape-column .scape-title {
+        float: left;
+        font-weight: bold;
+        clear: both;
+        margin: 5px 0;
+    }
+
+    .scape-column input, .scape-column textarea {
+        float: left;
+        clear: left;
+        margin-left: 10px;
+    }
+
+    .scape-column label {
+        float: left;
+        margin-left: 5px;
+        font-weight: normal;
+    }
+
+.validerror {
+    border: 2px solid red;
+}
+
+.ppstreetnum div{
+    color: black !important;
+    text-shadow: 1px 0px white, -1px 0px white, 0px -1px white, 0px 1px white;
+    font: 10px arial,sans-serif !important;
+    top: 7px!important;
+}
+
+
+
+.MicrosoftMap .Infobox .infobox-info {
+    padding: 0 5px;
+}
+
+.w-panel{
+    padding-top:8px;
+    padding-bottom:5px;
+}
+
+.w-group{
+    margin-top:10px;
+}
+
+.w-label-sm {
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+    font-size: 11px;
+    font-weight:bold;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.w-label {
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+    font-size: 11px;
+    font-weight:bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.w-input{
+    padding-left:10px;
+    padding-right:2px;
+}
+
+@media (max-width: 640px) {
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-justified > li > a  {
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.modal{
+    z-index:4000;
+}
+
+h4.chart-title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.z-text-s {
+  font-size: 11px;
+}
+.z-text-xs {
+  font-size: 9px;
+  line-height: 9px;
+}
+.z-font {
+  font-size: 12px;
+}
+.z-box {
+  height: 22px;
+  padding: 1px 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: white;
+  font-size: 12px;
+}
+.z-selected {
+  background-color: #999;
+}
+.z-checkbox {
+  float: left;
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 140px;
+  line-height: 20px;
+}
+.z-checkbox .z-label {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+/* List start */
+.z-list {
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  list-style: none;
+}
+.z-list li.z-row {
+  line-height: 32px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.z-list li.z-row:first-child {
+  border-top: 1px solid #ccc;
+}
+.z-list li.z-row:hover {
+  background-color: #ddd;
+}
+/* List end */
+
+.map-marker-label{
+    margin-left: -25px !important;
+    width: 50px;
+    text-align:center;
+    text-shadow:1px 0px white, -1px 0px white, 0px -1px white, 0px 1px white;
+}
+
+.search-font-size{
+    font-size:12px;
+}
+
+.cameraIconColor{
+    border-color:blue;
+    border-width:2px;
+    border-style:solid;
+}
+
+.tooltip {
+    z-index: 10000;
+    overflow:visible;
+}
+
+img { 
+    /*-ms-interpolation-mode: bicubic;*/ 
+    /*-ms-interpolation-mode: nearest-neighbor;*/
+}
+
+.myCheckboxSize{
+    width:18px;
+    height:18px;
+}
+
+.k-my-tooltip {
+    border-color: black !important;
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.floatBarDrowpdown20mm {
+    width: calc(100% - 200px);
+    left: 200px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.floatBarDrowpdown20mm select {
+    width: 98%;
+    margin: 5px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+}
+
+.notAllowSelection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.createLsrAccount-border{
+    border-color:red;
+}
+
+.propertyinfo-main-small{
+    display:inline-block;
+    width:70%;
+}
+.propertyinfo-main-full {
+    display: inline-block;
+    width: 100%;
+}
+.propertyinfo-ads {
+    display: inline-block;
+    width: 30%;
+}
+.propertyinfo-ads-hide {
+    display:none;
+}
+
+.viewMyReports-view {
+    background-color: #4e6d71;
+}
+
+/* EvoPDF page control css  */
+.page-break-before {
+    page-break-before: always;
+}
+
+.page-break-after {
+    page-break-after: always;
+}
+
+.page-break-inside {
+    page-break-inside: avoid;
+}
+/* EvoPDF page control css: END.  */
+
+
