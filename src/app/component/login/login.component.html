@@ -1,0 +1,12 @@
+<div class="login-content" style="width:100%">
+  <div class="login-page" [ngStyle]="getLoginPageStyle(500, 400)">
+    <div class="" >
+      <div class="login-sidebar">
+        <login-sidebar *ngIf="state === 0" (forgot)="forgot($event)"></login-sidebar>
+        <forgot-password *ngIf="state === 1" (reset)="reset($event)" (closePage)="close($event)"></forgot-password>
+        <password-reset *ngIf="state === 2" [passData]="passData" (closePage)="close($event)"></password-reset>
+        <password-reset-confirm *ngIf="state === 3" (resetLogin)="resetLogin($event)"></password-reset-confirm>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<div class="main-div">
+<div class="main-div" *ngIf="sessionValid">
   <div class="left-div vp-left" [ngStyle]="leftDiv()" (drop)="dragEnd($event)"  (dragend)="dragEnd($event)" (dragover)="allowDrop($event)">
     <app-left-panel  [resized]="getPanel('left')" (newpanel)="newPanel($event)"></app-left-panel>
   </div>
@@ -8,3 +8,6 @@
   </div>
 </div>
 <div class="waiting-div"></div>
+<div class="login-div" *ngIf="!sessionValid">
+ <login-component></login-component>
+</div>

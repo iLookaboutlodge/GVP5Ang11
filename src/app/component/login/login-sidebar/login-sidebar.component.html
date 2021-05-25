@@ -1,0 +1,44 @@
+<div class="flex-center-column" style="width:100%; height:100%;">
+  <div class="logo">
+    <div class="imagediv">
+      <img src="assets/images/logo.svg" alt="iLookAbout Logo Image" />
+    </div>
+  </div>
+  <div style="width:100%">
+    <form class="login-form" [formGroup]="form" (submit)="login()">
+      <div class="login-content" style="width:100%">
+        <div class="signin-div">
+          <div class="header-div">
+            <div class="signin">
+              Sign In
+            </div>
+            <div class="message">
+              <p>Please enter your email address and password below.</p>
+              <a (click)="forgotPassword($event)" style="margin-left:20px">Forgot Password</a>
+            </div>
+          </div>
+          <div class="input-item">
+            <label>Username</label>
+            <input class="form-control" name="usernameinput" type="text" formControlName="username" autocomplete="off"
+              (keypress)="inputPassword($event)" />
+          </div>
+          <div class="input-item">
+            <label>Password</label>
+            <input class="form-control" type="password" formControlName="password" autocomplete="off" type="password"
+              (keypress)="inputPassword($event)" />
+          </div>
+          <div class="buttons-div">
+            <div>
+              <button type="submit" [disabled]="!form.valid" class="btn sign-in btn-primary">Sign In</button>
+            </div>
+          </div>
+          <!-- <div class="forgot-div">
+          <div>
+            <a (click)="forgotPassword()" style="margin-left:20px">Forgot Password</a>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

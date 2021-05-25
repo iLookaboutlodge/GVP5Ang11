@@ -8,6 +8,8 @@ import { NewPanelRequest, PanelService } from './services/panel-service.service'
 })
 export class AppComponent implements OnInit, OnDestroy, OnChanges {
   title = 'GVP5NewAng11';
+  sessionID="";
+  sessionValid=false;
 
   constructor(
     private panelService: PanelService,

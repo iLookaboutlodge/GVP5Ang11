@@ -1,0 +1,64 @@
+@import '~src/theme/variables.scss';
+
+$login-width:500px;
+$login-height:400px;
+.login-content{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color: lightgrey;
+  text-align: center;
+  vertical-align:middle;
+  .login-page {
+    padding: 0;
+    position: absolute;
+    max-width: $login-width;
+    max-height: $login-height;
+    width:$login-width;
+    height:$login-height;
+    padding:0;
+    background-color: white;
+    border-radius: 10px;
+    .login-sidebar{
+      background-color: white;
+      // height:600px;
+      // width:600px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  
+    }
+  }
+}
+
+.fab {
+  background-color: transparent;
+  box-shadow: none !important;
+  color: $black;
+  .icon {
+    text-align: center;
+  }
+  &.activated {
+    background-color: rgba($black, 0.1);
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .login-splash {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .login-splash {
+    display: inline-block !important;
+  }
+}
+
+input{
+  font-size: 1.5rem;
+}
+button{
+  font-size: 1.2rem;
+}

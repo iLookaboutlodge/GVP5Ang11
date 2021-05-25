@@ -5,22 +5,22 @@ var package = require("./package.json");
 var buildVersion = package.version;
 const options = {
     files: 'src/environments/environment.prod.ts',
-    from: /Version: '(.*)'/g,
-    to: "Version: 'Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
+    from: /GVP5Version: '(.*)'/g,
+    to: "GVP5Version: 'Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
     allowEmptyPaths: false,
 };
 
 const options1 = {
   files: 'src/environments/environment.stage.ts',
-  from: /Version: '(.*)'/g,
-  to: "Version: 'STAGE Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
+  from: /GVP5Version: '(.*)'/g,
+  to: "GVP5Version: 'STAGE Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
   allowEmptyPaths: false,
 };
 
 const options2 = {
   files: 'src/environments/environment.ts',
-  from: /Version: '(.*)'/g,
-  to: "Version: 'DEV Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
+  from: /GVP5Version: '(.*)'/g,
+  to: "GVP5Version: 'DEV Ver "+ buildVersion +' ('+ (new Date().toDateString()) +')' + "'",
   allowEmptyPaths: false,
 };
 

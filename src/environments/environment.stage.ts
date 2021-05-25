@@ -5,15 +5,15 @@ export const environment: ConfigModel = {
   GoogleMapKey:{
     clientId: 'gme-ilookaboutcorp',
     channel: 'GVP5-ILA',
-    apiVersion: 'STAGE Ver 1.0.1 (Thu May 20 2021)',
+    apiVersion: 'quarterly',
     libraries: ['drawing','places', 'geometry'],
     googleUrlIndicator:"maps.googleapis.com/maps/api/streetview"
   },
   LoginAPIBase:'https://demo-gvp.ilookabout.com/api',// 'https://demo-gvp.ilookabout.com/api', //'http://localhost:36240/api', //// login-service
-  GVP5APIBase: 'https://demo-gvp.ilookabout.com/api',//'https://demo-gvp.ilookabout.com/api',//'http://localhost:36240/api'
+  GVP5ServiceBase:'http://dev3-geoviewport.ilookabout.com/',
   ApplicationID: 19,
   production: false,
-  Version: 'STAGE Ver 1.0.1 (Thu May 20 2021)',
+  GVP5Version: 'STAGE Ver 1.0.1 (Thu May 20 2021)',
   
   // Date_DisplayFormat:"MMM DD, YYYY",
   // DateTime_DisplayFormat:"MMM DD, YYYY HH:mm",

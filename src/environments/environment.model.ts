@@ -9,10 +9,15 @@ export interface ConfigModel {
     googleUrlIndicator?:string
   } ,
   LoginAPIBase: string;    // login-service
-  GVP5APIBase: string;   // MA-service
+  GVP5ServiceBase:string;  // 'http://dev3-geoviewport.ilookabout.com/'
+  // ILAService: string;   // ILAServices : ilaservices
+  // PLAService: string;   // plsservices
+  // TMSService: string;   // tmsservices
+  // EVOPDFService:string; //evopdfservices
+
   ApplicationID: number;
   production: boolean;
-  Version: string;
+  GVP5Version: string;
   // Date_DisplayFormat: string; //IONIC-DATETIME format.
   // DateTime_DisplayFormat: string; //IONIC-DATETIME format.
   // Date_PickerFormat: string;
